@@ -671,7 +671,7 @@ gpt_api_key = None
 opt_server = None
 bad_patterns = []
 
-with open('bad_patterns.txt', 'r') as reader:
+with open('../../evals_with_custom_code/prontoqa/bad_patterns.txt', 'r') as reader:
 	for line in reader:
 		bad_patterns.append(re.compile(line.strip()))
 

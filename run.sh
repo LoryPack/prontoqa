@@ -11,7 +11,7 @@ source .env
 
 # the context is too long for ada, babbage and curie, so ignore them
 
-SIZES=( "text-davinci-003" )
+SIZES=( "text-davinci-003"  "gpt-4-1106-preview"  "gpt-3.5-turbo-0613" )
 ONTOLOGIES=( "fictional" "false" )
 
 for SIZE in "${SIZES[@]}"; do
