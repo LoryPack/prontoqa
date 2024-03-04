@@ -6,7 +6,7 @@ import time
 last_request_time = float('-inf')
 
 def predict(api_key, model_name, prompt, temperature=0, logprobs=5, n=1, stop=None, max_tokens=1024, echo=False, min_query_interval=None):
-	chat = model_name.startswith('gpt-3.5-turbo')
+	chat = model_name.startswith('gpt-3.5-turbo') or model_name.startswith('gpt-4')
 	if chat:
 		# TODO: for testing, perhaps its better to split this into a separate `predict_chat` function
 		examples = prompt.split('Q:')
